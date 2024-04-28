@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AJAX</title>
+<link rel="stylesheet" href="assets/all.min.css">
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/index.css">
+
+  </head>
+  <body>
+    <h1 class="text-center my-3">API APP #1</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <div class="user-content border p-3 text-center">
+                    <div class="cont-img">
+                        <img src="assets/images/main-cover.PNG" alt="" id="user-image" class="img img-responsive">
+                    </div>
+                    <div class="text-content">
+                        <h3 id="user-name" class="mt-3 p-2">Mostafa Ali</h3>
+                        <h4 id="user-email">mostafahmed@eraasoft.com</h4>
+                        <h5 id="info"></h5>
+                    </div>
+                    <div class="cont-buttons border p-3 mt-3">
+                      <button class="btn btn-primary" data-info="phone" >Phone</button>
+                      <button class="btn btn-info" data-info="address" >Address</button>
+                    </div>
+                    <div id="new-user" class="my-3">
+                      <button class="btn btn-success btn-block"  >Show New User</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <script src="index.js" type="module"></script>
+
+  </body>
+</html>

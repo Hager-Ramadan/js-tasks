@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 10rem;
+    
+   
+}
+.tabs{
+    display: flex;
+    list-style: none;
+    
+}
+li{
+    padding: 1rem;
+    background-color:#2b3035;
+    transition: .2s;
+    color:#6ea8fe;
+}
+.all{
+   border-radius: 7px 7px 0 0;
+    background-color: #2b3035;
+}
+
+.active,
+.tabs li:hover{
+ background-color: #2b3035;
+ border: #495057 1px solid;
+ border-radius: 6px 6px 0 0;
+ border-bottom: none;
+}
+.active{
+    color: #fff;
+}
+.content{
+    
+    color: #868e96;
+    
+   border: #495057 1px solid;
+   border-radius: 0 0 7px 7px;
+    background-color: #2b3035;
+}
+.content div{
+     padding: 2rem;
+}
+.deactive{
+    display: none;
+}
+.active-p{
+    display: block;
+}
+
+
+    </style>
+<div class="container">
+    <div class="all">
+    <ul class="tabs">
+        <li class="active home">Home</li>
+        <li class="profile">Profile</li>
+        <li class="contact">Contact</li>
+
+    </ul></div>
+    <div class="content">
+        <div class="text_home">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
+        <div class="deactive text_profile">This is some placeholder content the Profile tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
+        <div class="deactive text_contact">This is some placeholder content the Contact tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
+
+    </div>
+    
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
